@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Btn Delete -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Kalkulator by Taufik</title>
+  </head>
+  <body>
+    <div class="kalkulator">
+      <div class="display">
+        <div class="putih">
+          <div class="area">
+            <h1 id="display"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="Buttons">
+        <div class="buttonRow1">
+          <div class="oren" onclick="Clear()" style="cursor: pointer;"><p>C</p></div>
+          <div class="oren" onclick="Delete()" style="cursor: pointer;">
+            <p>
+              <span class="material-symbols-outlined"> backspace </span>
+            </p>
+          </div>
+        </div>
+        <div class="buttonRow2">
+          <div class="abuAbu" onclick="tambahAngka('7')" style="cursor: pointer;"><p>7</p></div>
+          <div class="abuAbu" onclick="tambahAngka('8')" style="cursor: pointer;"><p>8</p></div>
+          <div class="abuAbu" onclick="tambahAngka('9')" style="cursor: pointer;"><p>9</p></div>
+          <div class="oren" onclick="operator('/')" style="cursor: pointer;"><p>:</p></div>
+        </div>
+        <div class="buttonRow3">
+          <div onclick="tambahAngka('4')" class="abuAbu" style="cursor: pointer;"><p>4</p></div>
+          <div onclick="tambahAngka('5')" class="abuAbu" style="cursor: pointer;"><p>5</p></div>
+          <div onclick="tambahAngka('6')" class="abuAbu" style="cursor: pointer;"><p>6</p></div>
+          <div onclick="operator('x')" class="oren" style="cursor: pointer;"><p>x</p></div>
+        </div>
+        <div class="buttonRow4">
+          <div onclick="tambahAngka('1')" class="abuAbu" style="cursor: pointer;"><p>1</p></div>
+          <div onclick="tambahAngka('2')" class="abuAbu" style="cursor: pointer;"><p>2</p></div>
+          <div onclick="tambahAngka('3')" class="abuAbu" style="cursor: pointer;"><p>3</p></div>
+          <div onclick="operator('-')" class="oren" style="cursor: pointer;"><p>-</p></div>
+        </div>
+        <div class="buttonRow5">
+          <div onclick="tambahAngka('.')" class="abuAbu" style="cursor: pointer;"><p>.</p></div>
+          <div onclick="tambahAngka('0')" class="abuAbu" style="cursor: pointer;"><p>0</p></div>
+          <div onclick="penjumlahan()" class="oren" style="cursor: pointer;"><p>=</p></div>
+          <div onclick="operator('+')" class="oren" style="cursor: pointer;"><p>+</p></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
